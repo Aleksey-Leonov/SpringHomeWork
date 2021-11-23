@@ -10,7 +10,6 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-
         ApplicationContext context = new AnnotationConfigApplicationContext("ru.products");
         ProductRepository productRepo = context.getBean(ProductRepository.class);
 
