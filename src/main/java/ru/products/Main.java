@@ -5,18 +5,15 @@ package ru.products;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.io.IOException;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
-        //создаю пустой спринговый контекст для поиска своих бинов в указанном пакете
+    public static void main(String[] args) throws IOException {
+
         ApplicationContext context = new AnnotationConfigApplicationContext("ru.products");
-
         ProductRepository productRepo = context.getBean(ProductRepository.class);
-        System.out.println(productRepo.addProductRepository());
 
-
-//        System.out.println(product.getName());
 
     }
 }

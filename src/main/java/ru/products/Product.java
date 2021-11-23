@@ -11,10 +11,10 @@ public class Product {
     private double price;
 
 
-    public Product() {
-        this.id = (int) (Math.random() * 10);
-        this.name = "Paper";
-        this.price = 50.0;
+    public Product(int id, String name, double price) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
     }
 
     public int getId() {
